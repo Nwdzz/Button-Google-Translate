@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Translate</title>
+	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+	<style type="text/css">
+		.goog-te-banner-frame.skiptranslate {display: none!important;} 
+		body {top: 0px!important;}
+
+		#goog-gt-tt {
+		  display: none!important;
+		}
+		#goog-gt-tt:hover {
+		  display: none!important;
+		}
+		.goog-text-highlight {
+		   background-color: transparent!important;
+		   box-shadow: none!important;
+		}
+
+		#google_translate_element {
+		    position: absolute;
+		    right: 2.9% !important;
+		}
+
+		.goog-te-gadget-simple {
+		    background-color: rgba(255, 255, 255, 0.2) !important;
+		    border: 1px solid rgba(198, 198, 198, 0.5) !important;
+		    padding: 8px !important;
+		    border-radius: 4px !important;
+		    font-size: 1rem !important;
+		    line-height: 2rem !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="google_translate_element"></div>
+	<p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+</body>
+<script type="text/javascript">
+
+	function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,zh-CN,en,fr,id,it,ja,ko,ru,es,', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+</html>
